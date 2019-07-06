@@ -12,7 +12,6 @@ module.exports.jogo = function(application, req, res){
     var JogoDAO = new application.app.models.JogoDAO(connection);
 
     JogoDAO.iniciaJogo(res, usuario, casa);
-
     
 };
 
@@ -22,3 +21,15 @@ module.exports.sair = function(application, req, res){
         res.render('index', {validacao: {}, dadosForm: {}})
     });
 };
+
+module.exports.suditos = function(application, req, res){
+
+    res.render('aldeoes', {validacao: {}});
+};
+
+module.exports.pergaminhos = function(application, req, res){
+
+    res.render('pergaminhos', {validacao: {}});
+};
+
+

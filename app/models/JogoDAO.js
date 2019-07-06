@@ -36,11 +36,6 @@ JogoDAO.prototype.iniciaJogo = function(res, usuario, casa){
 
 };
 
-
-
-
-
-
 module.exports = function(){
     return JogoDAO;
 };
